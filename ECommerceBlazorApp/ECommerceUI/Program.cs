@@ -1,13 +1,30 @@
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
-using ECommerceUI.Data;
+using ECommerceUI;
+using System.Net.Http;
+using ECommerceUI.Services; // Ensure this using statement is present
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
-builder.Services.AddSingleton<WeatherForecastService>();
+
+// Register HttpClient
+builder.Services.AddHttpClient("ECommerceAPI", client =>
+{
+    client.BaseAddress = new Uri("https://localhost:5001/"); // Ensure this matches your API's base URL
+});
+
+// Register a scoped HttpClient for injection
+builder.Services.AddScoped(sp =>
+    sp.GetRequiredService<IHttpClientFactory>().CreateClient("ECommerceAPI"));
+
+// Register ECommerceService
+builder.Services.AddScoped<ECommerceService>();
+
+// Register CacheService as Singleton
+builder.Services.AddSingleton<CacheService>();
 
 var app = builder.Build();
 
@@ -15,11 +32,7 @@ var app = builder.Build();
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-    app.UseHsts();
 }
-
-app.UseHttpsRedirection();
 
 app.UseStaticFiles();
 

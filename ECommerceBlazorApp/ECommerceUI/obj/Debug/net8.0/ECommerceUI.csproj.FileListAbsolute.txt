@@ -1,0 +1,8 @@
+C:\Users\hosseinpour.a\source\repos\ahmadrezahoseinpour\ECommerce\ECommerceBlazorApp\ECommerceUI\obj\Debug\net8.0\ECommerceUI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hosseinpour.a\source\repos\ahmadrezahoseinpour\ECommerce\ECommerceBlazorApp\ECommerceUI\obj\Debug\net8.0\ECommerceUI.AssemblyInfoInputs.cache
+C:\Users\hosseinpour.a\source\repos\ahmadrezahoseinpour\ECommerce\ECommerceBlazorApp\ECommerceUI\obj\Debug\net8.0\ECommerceUI.AssemblyInfo.cs
+C:\Users\hosseinpour.a\source\repos\ahmadrezahoseinpour\ECommerce\ECommerceBlazorApp\ECommerceUI\obj\Debug\net8.0\ECommerceUI.csproj.CoreCompileInputs.cache
+C:\Users\hosseinpour.a\source\repos\ahmadrezahoseinpour\ECommerce\ECommerceBlazorApp\ECommerceUI\obj\Debug\net8.0\ECommerceUI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\hosseinpour.a\source\repos\ahmadrezahoseinpour\ECommerce\ECommerceBlazorApp\ECommerceUI\obj\Debug\net8.0\ECommerceUI.RazorAssemblyInfo.cache
+C:\Users\hosseinpour.a\source\repos\ahmadrezahoseinpour\ECommerce\ECommerceBlazorApp\ECommerceUI\obj\Debug\net8.0\ECommerceUI.RazorAssemblyInfo.cs
+C:\Users\hosseinpour.a\source\repos\ahmadrezahoseinpour\ECommerce\ECommerceBlazorApp\ECommerceUI\obj\Debug\net8.0\ECommerceUI.sourcelink.json
